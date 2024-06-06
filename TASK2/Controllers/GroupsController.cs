@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CourseApi.Data.Entities;
+using TASK2.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
-using TASK1.Dtos.GroupDtos;
+using TASK2.Dtos.GroupDtos;
+using TASK2.Data;
 
-namespace CourseApi.Controllers {
+namespace TASK2.Controllers {
   [Route("api/[controller]")]
   [ApiController]
   public class GroupsController : Controller {

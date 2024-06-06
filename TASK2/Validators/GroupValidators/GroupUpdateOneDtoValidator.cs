@@ -1,10 +1,8 @@
 using FluentValidation;
-namespace TASK1.Validators.GroupValidators
-{
-  public class GroupUpdateOneDtoValidator : AbstractValidator<GroupUpdateOneDto>
-  {
-    public GroupUpdateOneDtoValidator()
-    {
+using TASK2.Dtos.GroupDtos;
+namespace TASK2.Validators.GroupValidators {
+  public class GroupUpdateOneDtoValidator : AbstractValidator<GroupUpdateOneDto> {
+    public GroupUpdateOneDtoValidator() {
       RuleFor(x => x.Name)
         .NotEmpty()
         .MinimumLength(4)
@@ -12,6 +10,8 @@ namespace TASK1.Validators.GroupValidators
       RuleFor(x => x.Limit)
         .NotEmpty()
         .InclusiveBetween(5, 18);
+      RuleFor(x => x.Id)
+        .NotEmpty();
     }
   }
 }

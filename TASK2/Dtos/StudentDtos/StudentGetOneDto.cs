@@ -1,4 +1,4 @@
-﻿namespace TASK1.Dtos.StudentDtos {
+﻿namespace TASK2.Dtos.StudentDtos {
   public class StudentGetOneDto {
     public int Id { get; set; }
     public string? FirstName { get; set; }

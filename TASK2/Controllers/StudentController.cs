@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TASK1.Data.Entities;
-using TASK1.Dtos.StudentDtos;
+using TASK2.Data;
+using TASK2.Data.Entities;
+using TASK2.Dtos.StudentDtos;
 
-namespace TASK1.Controllers {
+namespace TASK2.Controllers {
   [Route("api/[controller]")]
   [ApiController]
   public class StudentController : ControllerBase {

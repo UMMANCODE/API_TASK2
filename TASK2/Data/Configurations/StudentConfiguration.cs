@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TASK1.Data.Entities;
+using TASK2.Data.Entities;
 
-namespace TASK1.Data.Configurations {
+namespace TASK2.Data.Configurations {
   public class StudentConfiguration : IEntityTypeConfiguration<Student> {
     public void Configure(EntityTypeBuilder<Student> builder) {
       builder.Property(s => s.FirstName)

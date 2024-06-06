@@ -1,10 +1,11 @@
 ﻿using System;
-using CourseApi;
+using TASK2;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using TASK1.Data.Entities;
+using TASK2.Data.Entities;
 using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+using TASK2.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AppDbContext>(option => {
-  option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+  option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 //Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

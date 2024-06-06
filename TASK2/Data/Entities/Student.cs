@@ -1,6 +1,6 @@
-﻿using CourseApi.Data.Entities;
+﻿using TASK2.Data.Entities;
 
-namespace TASK1.Data.Entities {
+namespace TASK2.Data.Entities {
   public class Student : AuditEntity {
     public string? FirstName { get; set; }
     public string? LastName { get; set; }

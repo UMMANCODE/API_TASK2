@@ -1,4 +1,4 @@
-﻿namespace TASK1.Dtos.GroupDtos {
+﻿namespace TASK2.Dtos.GroupDtos {
   public class GroupUpdateOneDto {
     public int Id { get; set; }
     public string? Name { get; set; }
